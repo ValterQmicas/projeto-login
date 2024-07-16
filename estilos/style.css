@@ -39,8 +39,19 @@ section#login{
     width: 250px;
     height: 500px;
     border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.552);
+    
 }
 
 section#login > div#imagem{
     background: var(--cor-principal) url(../Imagens/pexels-mel-gomes-290426165-13183160\ \(1\).jpg);
+    height: 200px;
+    background-size: cover;
+    display: block;
+}
+
+section#login > formulario{
+    padding: 10px;
+    display: block;
 }
