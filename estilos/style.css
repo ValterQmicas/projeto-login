@@ -7,8 +7,12 @@
     Preto: #071A26 #001222
     
 */
-
-
+:root{
+--cor-principal: #002D4E;
+--cor-secundaria:#BAD0D9;
+--cor-terciaria:#071A26;
+--cor-quartenaria:#001222;
+}
 *{
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     padding: 0px;
@@ -17,7 +21,7 @@
 }
 
 body, html{
-    background-color:#002D4E ;
+    background-color:var(--cor-principal) ;
     height: 100vh;
     width: 100vw;
 }
@@ -27,5 +31,16 @@ main{
     width: 100vw;
 }
 section#login{
-    background-color: #BAD0D9;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-color: var(--cor-secundaria);
+    width: 250px;
+    height: 500px;
+    border-radius: 20px;
+}
+
+section#login > div#imagem{
+    background: var(--cor-principal) url(../Imagens/pexels-mel-gomes-290426165-13183160\ \(1\).jpg);
 }
